@@ -1,0 +1,274 @@
+.pos-user-at {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pos-user-at__title {
+    width: 453px;
+    margin-left: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage,
+.product,
+.sale,
+.space {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #8C8C8C;
+}
+
+.space {
+    font-size: 26px;
+}
+
+.sale {
+    font-weight: 700;
+    color: black;
+}
+
+.banner {
+    /* margin-left: 40px; */
+    position: relative;
+    display: flex;
+}
+
+.img-banner {
+    margin-top: 30px;
+}
+
+.button-banner-sale {
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    left: 836px;
+}
+
+.product-main {
+    margin-top: 64.6px;
+    display: flex;
+    width: 1216px;
+    margin-left: 112px;
+    position: relative;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.product-main__type {
+    display: block;
+}
+
+.product-main__type__sale {
+    margin-top: 55px;
+    width: 211px;
+    height: 208px;
+}
+
+.product-main__type__sale-title a,
+.product-main-type__sale-list ul li a span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #8C8C8C;
+}
+
+.product-main__type__sale-title a {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    color: red;
+}
+
+.product-main-type__sale-list>ul>li {
+    margin-top: 24px;
+}
+
+
+/* sort - filter */
+.product-main__type__filter {
+    margin-top: 150px;
+    display: block;
+}
+
+.sort-by__title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.sort-by__title-left {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    color: black
+}
+
+.sort-by__title-right>a>span {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #BFBFBF;
+}
+
+.sort-by__title-right {
+    margin-top: 8px;
+}
+
+.sort-by {
+    display: block;
+}
+
+.sort-select-title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.sort-select>ul>li,
+.sort-color>ul>li,
+.sort-size>ul>li,
+.sort-cost>ul>li {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+
+.colection {
+    width: 1216px;
+    display: block;
+    margin-top: 55px;
+    margin-left: 102px;
+}
+.colection-list{
+    display: flex;
+    width: 936px;
+    flex-wrap: wrap; 
+    margin-left: -40px;
+}
+
+.new-arrivals-box{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 40px);
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.new-arrivals-img-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+.new-arrivals-img a, .new-arrivals-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.new-arrivals-img a img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    animation: fade 0.6s;
+}
+
+.new-arrivals-back{
+    display: none;
+}
+
+.new-arrivals-img-container:hover .new-arrivals-back{
+    display: block;
+}
+
+.new-arrivals-img-container:hover .new-arrivals-front{
+    display: none;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.new-arrivals-text{
+    display: block;
+}
+
+.new-arrivals-text__category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-arrivals-text__name{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+.new-arrivals-cost{
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+
+.count-page-list{
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-count-page{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-count-page li div{
+    color: #BFBFBF;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.nav-count-page__active{
+    background: #383838;
+    border-radius: 28px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+

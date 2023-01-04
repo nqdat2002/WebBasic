@@ -1,0 +1,379 @@
+:root {
+    --text-color: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Neurial Grotesk', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: auto;
+    max-width: 1440px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* topbar */
+
+.topbar {
+    width: 100%;
+    height: 42px;
+    background-color: #DB4040;
+    overflow: hidden;
+    text-align: center;
+}
+
+.topbar_des {
+    text-transform: uppercase;
+    position: relative;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.topbar_des>a {
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(29, 10, 59);
+}
+
+
+.header {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.header__logo-shop {
+    margin-right: 156px;
+}
+
+.header__navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.header__navbar-list li a span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: rgba(20, 20, 20, 1);
+}
+
+.header__icon-list {
+    margin-left: 65px;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.icon-item {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.icon-item i{
+    color: #141414;
+}
+
+
+/* submenu */
+.submenu {
+    position: absolute;
+    background: #fff;
+    top: 145px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.nav-submenu {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 90px;
+}
+
+.nav-submenu-column li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(140, 140, 140, 1);
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+.nav-submenu-column-title a {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(20, 20, 20, 1);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.navbar-item-active:hover .submenu {
+    display: block;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.navbar-item-active:hover .overlay {
+    display: block;
+}
+
+
+
+/* footer */
+
+.footer {
+    width: 1440px;
+    display: block;
+    margin-top: 64px;
+    /* margin-left: 40px; */
+}
+
+.footer-top__logo {
+    margin-left: 113px;
+    margin-bottom: 42px;
+}
+
+/* footer-main */
+.footer-main {
+    display: block;
+    border-top: 1px solid black;
+}
+
+.footer-main-items {
+    display: flex;
+    margin-left: 112px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.footer-main-items__infor,
+.footer-main-items__infor__contact {
+    display: block;
+}
+
+.footer-main__infor__contact__email,
+.footer-main__infor__contact__address {
+    margin-top: 8px;
+}
+
+.phone-num,
+.email,
+.address {
+    text-decoration: none;
+}
+
+.title_1,
+.title_2,
+.title_3 {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.text-phone,
+.text-mail,
+.text-address {
+    font-family: 'Neurial Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 31px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-main__infor__register {
+    display: block;
+    margin-top: 40px;
+}
+
+.footer-main__infor__register-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-main__infor__register-block {
+    margin-top: 12px;
+    display: block;
+    border-bottom: 1px solid;
+}
+
+.footer-main__infor__register-block-fill {
+    display: flex;
+}
+
+.user-email-fill {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+
+.user-email-fill:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.iconbutton {
+    margin-left: 115px;
+}
+
+
+/* footer-main__more-infor */
+.footer-main__more-infor {
+    display: flex;
+    margin-left: 82px;
+}
+
+.bar {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    margin-left: 90px;
+}
+
+.footer ul {
+    padding: 0px;
+}
+
+.footer li {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.footer-main__copyright {
+    display: block;
+    border-top: 1px solid black;
+}
+
+.footer-main__copyright-title {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.overlay {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #141414;
+    opacity: 0.3;
+    z-index: 4;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    background: #ffffff;
+    /* color: rgb(158, 130, 130); */
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
+    transition: 1s ease-in;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.go-top i {
+    font-size: 2rem;
+}
+
+.go-top.active {
+    visibility: visible;
+}
+
+
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.div-small-memu{
+    position: absolute;
+    display: none;
+    
+}
+
+.icon-item-active i:hover .div-small-menu{
+    display: block;
+}

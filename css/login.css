@@ -1,0 +1,181 @@
+.pos-user-at {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 36px;
+}
+
+.pos-user-at__title {
+    width: 453px;
+    margin-left: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage,
+.product,
+.sale,
+.space {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #8C8C8C;
+}
+
+.space {
+    font-size: 26px;
+}
+
+.sale {
+    font-weight: 700;
+    color: black;
+}
+
+.container{
+    display: block;
+}
+
+.register__form{
+    margin-top: 127px;
+    margin-bottom: 257px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register__form-title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+.register__form-title__name{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 16px;
+    margin-left: 60px;
+}
+
+.register__form-title__ad{
+    font-size: 16px;
+    font-weight: 16px;
+    margin-bottom: 16px;
+    margin-left: 70px;
+}
+
+.register__form-main{
+    margin-bottom: 257px;
+    display: block;
+}
+
+.register__form-main__input-group{
+    left: 575px;
+    display: block;
+    position: relative;
+    width: 378px;
+    height: 435px;
+}
+
+.text-field{
+    width: 378px;
+    height: 52px;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+.check-box{
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.submit-btn{
+    border: none;
+    width: 378px;
+    height: 54px;
+    background: #DB4040;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.submit-btn span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.submit-btn:hover, .submit-btn:focus, .submit-btn:active{
+    box-shadow: 0 0 5px rgba(219, 64, 64, 0.5);
+    transform: scale(1.1);
+}
+
+.title-for-other-logins{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding-bottom: 16px;
+}
+
+.line{
+    width: 148px;
+    border-top: 1px solid black;
+    margin-top: 9px;
+}
+
+.title-for-other-logins span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.banner {
+    margin-left: 40px;
+    position: relative;
+    display: flex;
+}
+
+.img-banner {
+    margin-top: 30px;
+
+}
+
+.button-banner-sale {
+    position: absolute;
+    z-index: 1;
+    top: 386px;
+    left: 291px;
+}
+
+
+.submit-btn-google, .submit-btn-facebook{
+    text-align: center;
+    align-items: center;
+    width: 378px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 16px;
+    background: #fff;
+    border: 1px solid black;
+}
+
+.title-for-new-account a span{
+    color: #DB4040;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline;
+}
+
+.title-for-new-account {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
